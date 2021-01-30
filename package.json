@@ -6,7 +6,8 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy:prod":"firebase use prod && firebase deploy --only hosting"
+    "deploy:prod":"copy .\\config\\config-prod.js .\\src\\config.js && firebase use prod && firebase deploy --only hosting",
+    "dev":"copy .\\config\\config-dev.js .\\src\\config.js && cd src && live-server --host=localhost"
   },
   "author": "",
   "license": "ISC"

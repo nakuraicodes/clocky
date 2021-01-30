@@ -142,7 +142,6 @@ export function setHands() {
 
 export function drawClock(shadowRoot, clockWrapperSelector) {
   try {
-    console.log("draw clock");
     createSVG(shadowRoot, clockWrapperSelector);
     drawClockBorder();
     for (let angle = 0; angle < 360; angle += 30) {
