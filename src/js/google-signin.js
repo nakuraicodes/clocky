@@ -1,7 +1,7 @@
+import { G_CALENDAR_API_KEY, G_CLIENT_ID } from "../config.js";
 // Client ID and API key from the Developer Console
-var CLIENT_ID =
-  "135378639975-lds5235dobvdd8aob3t0agiceuugio0a.apps.googleusercontent.com";
-var API_KEY = "AIzaSyAFZp7ia8K_Jr6CL2Q4V6MiQaTFVDW9BCk";
+var CLIENT_ID = G_CLIENT_ID;
+var API_KEY = G_CALENDAR_API_KEY;
 // Array of API discovery doc URLs for APIs used by the quickstart
 var DISCOVERY_DOCS = [
   "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",

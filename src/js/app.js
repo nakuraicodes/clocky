@@ -23,7 +23,6 @@ async function refreshEventsDisplay() {
 }
 
 function keyUpEvent(evt) {
-  console.log("key up ", evt);
   if (evt.keyCode === 27) {
     escapeKeyEvent();
   }
@@ -107,7 +106,6 @@ function initEventsListeners() {
     const targetPage = window.location.hash.replace("#", "") || PAGE_ID.MAIN;
     goToPage(targetPage);
   });
-  console.log("ading event listner here");
   document.body.addEventListener("keyup", keyUpEvent);
 
   document
@@ -144,7 +142,6 @@ async function onAuthChanged(isSignedIn) {
     refreshCalendarList();
     await refreshEventsDisplay();
   } else {
-    console.log("no signed in");
     hide("signed-in-buttons");
     show("signed-out-buttons");
   }
