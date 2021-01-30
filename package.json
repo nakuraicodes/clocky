@@ -1,0 +1,13 @@
+{
+  "name": "clocky",
+  "version": "1.0.0",
+  "description": "unusual visualization of your Google calendar schedule",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:prod":"firebase use prod && firebase deploy --only hosting"
+  },
+  "author": "",
+  "license": "ISC"
+}

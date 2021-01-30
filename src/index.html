@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clocky</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <div id="page-main">
+        <div class="w3-bar">
+        <div id="signed-out-buttons" class="w3-bar-item">
+            <button id="authorize-button" title="Connect to Google Calendar"> Sign in with Google </button>
+        </div>
+        <div id="signed-in-buttons" class="w3-bar-item">
+            <button id="signout-button" title="Signout from Google Calendar"> Signout</button> <br/>
+            <button id="toggle-calendar-list" title="Display your calendars"> Toggle Calendar List</button>
+            <button id="refresh-events" title="Refresh Calendar Events"> <i class="material-icons w3-small">cached</i> </button>
+        </div>
+        <div class="w3-right">
+            <a href="#about" id="link-about-page" class="w3-bar-item">
+            About
+            </a>
+        </div>
+
+        </div>
+
+        <div id="calendar-list"></div>
+        <div class="clock-planner">
+            <clock-planner id="clock-planner"></clock-planner>
+        </div>
+    </div>
+
+    <div id="page-about">
+
+        <a href="#main" class="w3-center no-decoration" id="page-about-close" style="position:absolute; right: 50px; top: 50px;">
+            <span class="w3-button w3-circle w3-xlarge we-ripple w3-white w3-border" style="padding-top:10px;">
+                <i class="material-icons">close</i>
+            </span> <br/>
+            Esc.
+        </a>
+
+        <div class="w3-row">
+            <div class="w3-col s4 tablink w3-bottombar w3-padding" id="link-tab-about">
+                <a href="#about" class="no-decoration">
+                    About
+                </a>
+            </div>
+            <div class="w3-col s4 tablink w3-bottombar w3-padding" id="link-tab-tos">
+                <a href="#tos" class="no-decoration">
+                    Terms
+                </a>
+            </div>
+            <div class="w3-col s4 tablink w3-bottombar w3-padding" id="link-tab-privacy">
+                <a href="#privacy" class="no-decoration">
+                    Privacy
+                </a>
+            </div>
+        </div>
+
+
+        <div id="tab-about">
+            <h2>Clocky is an experiment</h2>
+            <p>
+                Clocky's goal was primarily to learn how to use a web component. The second goal is to provide another way to perceive our schedule.
+            </p>
+            <p>
+                Clocky's design is inspired by this article on Medium:
+                <a href="https://vineetkl.medium.com/timedraw-study-8e603c687f01" title="Article about Timedraw on Medium" target="__blank"> 
+                Timedraw, by the user vineetkl</a>.
+            </p>
+            <p>
+                For any question or comment, please email me at <a href="mailto:contact@nakuraicodes.com" alt="email website's author The Nakurai Codes team">contact@nakuraicodes.com</a>.
+            </p>
+        </div>
+
+        <div id="tab-tos">
+            <h2>Terms of use</h2>
+            <p>
+                This website is an experiment. It is provided as is without any guarantee. Please use at your own risk, the author is not responsible
+                for anything that would happen to you.
+            </p>
+            <p>
+                Please use this website for its intended purpose.
+            </p>
+        </div>
+
+        <div id="tab-privacy">
+            <h2>Privacy</h2>
+            <p>
+                This website does not use any cookie. It does (or soon will be) store data locally to ensure a proper user experience.
+                Your calendar's data are pulled directly from Google Calendar to your borwser. All the calendar permissions are read-only.
+            </p>
+        </div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="js/app.js" type="module"></script>
+    <script async defer src="https://apis.google.com/js/api.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+html,
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+#page-main {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+
+#page-about {
+  width: 60%;
+  padding-top: 10%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.clock-planner {
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+}
+
+#calendar-list {
+  position: absolute;
+  width: 400px;
+  top: 50px;
+  left: 10px;
+  background-color: white;
+  border: 1px solid gray;
+  display: none;
+}
+
+#calendar-list ul {
+  list-style-type: none;
+}
